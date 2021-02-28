@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "name": "@calvear/rsuite-styles",
   "title": "Custom React Suite stylesheet",
-  "description": "Custom React Suite styles for eases base styles and fonts injection.",
+  "description": "Custom React Suite CSS styles for eases base styles and fonts injection, transpiled from LESS",
   "author": "Alvear Candia, Cristopher Alejandro <calvear93@gmail.com>",
   "license": "MIT",
   "private": false,
