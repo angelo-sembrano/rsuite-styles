@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "name": "@calvear/rsuite-styles",
+  "title": "Custom React Suite stylesheet",
+  "description": "Custom React Suite styles for eases base styles and fonts injection.",
+  "author": "Alvear Candia, Cristopher Alejandro <calvear93@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "repository": "https://github.com/calvear93/rsuite-styles",
+  "main": "dist/light.css",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "rsuite",
+    "ui",
+    "less",
+    "catamaran"
+  ],
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6"
+  },
+  "peerDependencies": {
+    "rsuite": "^4.8.9"
+  },
+  "devDependencies": {
+    "less": "^4.1.1",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^13.10.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-order": "^4.1.0"
+  },
+  "scripts": {
+    "build": "lessc --js src/light.less dist/light.css && lessc --js src/dark.less dist/dark.css",
+    "upload": "npm run build && npm login && npm publish --access public",
+    "upload:beta": "npm run build && npm login && npm publish --access public --tag beta",
+    "upload:alpha": "npm run build && npm login && npm publish --access public --tag alpha",
+    "_packages:update": "npm update --save/--save-dev",
+    "_packages:force-update": "npx npm-check-updates -u",
+    "_git:case-sensitive": "git config core.ignorecase false"
+  }
+}
