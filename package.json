@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "@calvear/rsuite-styles",
   "title": "Custom React Suite stylesheet",
   "description": "Custom React Suite CSS styles for eases base styles and fonts injection, transpiled from LESS",
@@ -7,10 +7,7 @@
   "license": "MIT",
   "private": false,
   "repository": "https://github.com/calvear93/rsuite-styles",
-  "main": "dist/light.css",
-  "files": [
-    "dist"
-  ],
+  "main": "light.css",
   "keywords": [
     "react",
     "rsuite",
@@ -23,22 +20,24 @@
     "npm": ">=6"
   },
   "peerDependencies": {
-    "rsuite": "^4.8.9"
+    "rsuite": "^4.9.3"
   },
   "devDependencies": {
+    "copyfiles": "^2.4.1",
     "less": "^4.1.1",
     "prettier-stylelint": "^0.4.2",
-    "stylelint": "^13.10.0",
+    "stylelint": "^13.12.0",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-order": "^4.1.0"
   },
   "scripts": {
     "build": "lessc --js src/light.less dist/light.css && lessc --js src/dark.less dist/dark.css",
-    "upload": "npm run build && npm login && npm publish --access public",
-    "upload:beta": "npm run build && npm login && npm publish --access public --tag beta",
-    "upload:alpha": "npm run build && npm login && npm publish --access public --tag alpha",
+    "upload": "npm run build && npm login && cd dist && npm publish --access public",
+    "upload:beta": "npm run build && npm login && cd dist && npm publish --access public --tag beta",
+    "upload:alpha": "npm run build && npm login && cd dist && npm publish --access public --tag alpha",
     "_packages:update": "npm update --save/--save-dev",
     "_packages:force-update": "npx npm-check-updates -u",
-    "_git:case-sensitive": "git config core.ignorecase false"
+    "_git:case-sensitive": "git config core.ignorecase false",
+    "postbuild": "copyfiles package.json README.md LICENSE.md CHANGELOG.md dist"
   }
 }

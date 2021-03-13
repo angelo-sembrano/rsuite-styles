@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2021-03-13
+- Package root structure simplified.
+- Updated packages.
+
 ## [1.0.0] - 2021-01-28
 - React Suite base stylesheet.
 - Less transpiler to CSS.
