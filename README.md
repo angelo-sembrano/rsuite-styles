@@ -42,7 +42,7 @@ export default function App()
 For dark theme.
 
 ```javascript
-import '@calvear/rsuite-styles/dist/dark.less';
+import '@calvear/rsuite-styles/dark.less';
 import { Button } from 'rsuite';
 
 export default function App()
