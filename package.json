@@ -1,5 +1,5 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "name": "@calvear/rsuite-styles",
   "title": "Custom React Suite stylesheet",
   "description": "Custom React Suite CSS styles for eases base styles and fonts injection, transpiled from LESS",
