@@ -2,14 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2021-04-25
+- updated dependencies.
+
 ## [1.1.0] - 2021-03-13
-- Package root structure simplified.
-- Updated packages.
+- package root structure simplified.
+- updated packages.
 
 ## [1.0.0] - 2021-01-28
 - React Suite base stylesheet.
 - Less transpiler to CSS.
-- Base variables customized.
+- base variables customized.
 - z-index fix for picker-menu.
 - Catamaran font added.
-- Dark and Light themes transpilation.
+- dark and light themes transpilation.
