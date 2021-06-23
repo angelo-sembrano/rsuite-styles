@@ -1,5 +1,5 @@
 {
-  "version": "1.1.1",
+  "version": "1.1.2",
   "name": "@calvear/rsuite-styles",
   "title": "Custom React Suite stylesheet",
   "description": "Custom React Suite CSS styles for eases base styles and fonts injection, transpiled from LESS",
@@ -20,13 +20,13 @@
     "npm": ">=6"
   },
   "peerDependencies": {
-    "rsuite": "^4.9.4"
+    "rsuite": "^4.10.2"
   },
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "less": "^4.1.1",
     "prettier-stylelint": "^0.4.2",
-    "stylelint": "^13.13.0",
+    "stylelint": "^13.13.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-order": "^4.1.0"
   },
